@@ -146,12 +146,14 @@ implements GoogleApiClient.OnConnectionFailedListener {
     private void createGoogleApiClient() {
         //create builder we can manipulate
         GoogleSignInOptions.Builder optionsBuilder = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-	.requestScopes(new Scope(DriveScopes.DRIVE_FILE))
+	.requestScopes(new Scope("https://www.googleapis.com/auth/drive"))
+	 .requestScopes(new Scope("https://www.googleapis.com/auth/drive.readonly"))
+	.requestScopes(new Scope("https://www.googleapis.com/auth/calendar"))
 	.requestEmail();
 	    //.requestScopes(new Scope("https://www.googleapis.com/auth/drive"), new Scope("https://www.googleapis.com/auth/drive.readonly"))
 	    //.requestScopes(new Scope("https://www.googleapis.com/auth/drive.readonly"))
 		//.requestScopes(new Scope("https://www.googleapis.com/auth/calendar"))
-            
+           //.requestScopes(new Scope(DriveScopes.DRIVE_FILE))
         //.requestProfile();
 
         //if the user setup a server client id, add it
