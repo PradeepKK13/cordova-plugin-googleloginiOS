@@ -19,8 +19,8 @@ import com.google.android.gms.common.api.Status;
 
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.DriveScopes;
-import com.google.api.services.calendar.Calendar;
-import com.google.api.services.calendar.CalendarScopes;
+//import com.google.api.services.calendar.Calendar;
+//import com.google.api.services.calendar.CalendarScopes;
 
 //import com.google.api.services.drive.model.File;
 
